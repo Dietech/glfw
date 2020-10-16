@@ -2,9 +2,9 @@ project "GLFW"
     kind "StaticLib"
 	language "C"
 
-    location("build/" .. "%{prj.name}")
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("obj/" .. outputdir .. "/%{prj.name}")
+    location("%{wks.location}/build/%{prj.name}")
+	targetdir("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
+	objdir("%{wks.location}/obj/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{
